@@ -1,0 +1,253 @@
+body{
+    background: #444036;
+    color: wheat;
+    margin: 0;
+    font-family: 'montserrat';
+}
+
+header{
+    display: flex;
+    background: #504850;
+    place-content: space-between;
+    padding: 0 22px;
+}
+
+
+.button button{
+    background: purple;
+    color: wheat;
+    border: none;
+    padding: 11px 20px;
+    font-family: inherit;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 21px;
+}
+
+main section{
+    background: #800080;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    padding: 18px 16px;
+    position: relative;
+    top: 17px;
+    border-radius: 4px;
+    box-shadow: 5px 5px 21px #1b1a1b;
+}
+
+
+input{
+    display: block;
+    width: 97%;
+    height: 23px;
+    margin-bottom: 11px;
+    outline: none;
+}
+
+.btn{
+    padding: 4px 8px;
+    font-family: inherit;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: white;
+}
+
+.modal-card{
+    background: black;
+    padding: 7px;
+    width: 71%;
+    position: relative;
+    left: 71px;
+    bottom: 141px;
+    border-radius: 12px;
+    text-align: center;
+    display: none;
+    z-index: 6;
+}
+
+.backdrop{
+    width: 100%;
+    background: rgba(68, 68, 68, 0.6);
+    height: 622px;
+    position: absolute;
+    z-index: 4;
+    display: none;
+}
+
+
+.popup__section{
+    position: absolute;
+    left: 39px;
+    background: #800080;
+    box-sizing: border-box;
+    padding: 18px;
+    width: 84%;
+    margin: 46px auto;
+    display: none;
+    border-radius: 8px;
+    transform: translateY(0);
+    z-index: 100;
+    /* box-shadow: 0px 2px 16px red; */
+}
+
+
+.visible{
+    display: block !important;
+    /* transform: fade-slide-in 0.3s ease-out forwards; */
+}
+
+.invisible{
+    display: none !important;
+}
+
+
+.btn-success{
+    background: #444036;
+    padding: 8px 17px;
+}
+
+.btn-success:hover{
+    background: #380438;
+    color: #ffffff;
+    
+    /* box-shadow: 2px 2px 16px #88ab4e  */
+}
+
+.btn-passive:hover{
+    color: #444036;
+    background: #ff0000;
+    border-radius: 2px;
+}
+
+
+.popup{
+    display: none;
+    z-index: 120;
+}
+
+.popup-backdrop{
+        width: 100%;
+        background: rgba(36, 20, 38, 0.6);
+        height: 625px;
+        top: 0;
+        position: absolute;
+        z-index: 130;
+}
+
+.warning-popup{
+    width: 45%;
+    height: 167px;
+    background: #23022e;
+    box-shadow: 2px 2px 12px 1px black;
+    position: absolute;
+    border-radius: 11px;
+    padding: 18px 0px 0px 12px;
+    box-sizing: border-box;
+    left: 148px;
+    top: 244px;
+    color: white;
+    z-index: 134;
+}
+
+
+.close-btn{
+    background: rgb(190, 57, 57);
+    width: 21%;
+    position: absolute;
+    height: 21px;
+    top: 0px;
+    right: 14px;
+    border-radius: 2px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.info{
+    position: relative;
+    top: 26px;
+}
+
+.close-btn:hover{
+    background: red;
+}
+
+
+.information-wrapper{
+    background: rgb(83, 83, 83);
+    width: 96%;
+    height: 98px;
+    color: inherit;
+    text-align: center;
+    border-radius: 4px;
+}
+
+
+.movie-element{
+    background: #380438;
+    text-align: center;
+    display: flex;
+    width: 87%;
+    height: 127px;
+    margin: auto auto 9px auto;;
+    color: #000;
+    font-size: 12px;
+    border-radius: 4px;
+    box-shadow: 5px 5px 21px #1b1a1b;
+    padding: 4px;
+}
+
+
+#movie-list__ul{
+    margin-bottom: 12px;
+}
+
+
+.movie-element:hover{
+    border: 2px solid white;
+}
+
+
+.movie-element__info{
+    color: wheat;
+    padding: 10px 0 0 15px;
+}
+
+.movie-element__info p{
+    background: purple;
+    padding: 6px;
+}
+
+
+.movie-element__image{
+    background: url(./images/javascript-logo.png);
+    width: 32%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.close-popup__btn{
+    background: #ada7a7;
+    color: black;
+    width: 30%;
+    height: 22px;
+    text-align: center;
+    border-radius: 1px;
+    margin-left: 139px;
+    margin-top: -9px;
+}
+
+@keyframes fade-slide-in {
+    100% {
+    transform: translateY(100%) scaleX(3);
+}
+
+    0% {
+    transform: translateY(0%) scaleX(1);
+        
+    }
+}
